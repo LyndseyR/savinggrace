@@ -1,0 +1,40 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-size: 16px;
+  font-family: 'Lato', sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+h1 {
+  font-size: 48px;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 36px;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 32px;
+  font-weight: 500;
+}
+
+h4 {
+  font-size: 28px;
+  font-weight: 500;
+}
+
+//colors
+$teal: #28BE9B; //Navigation color/Primary
+$light-blue: #92DCE0;
+$dark-blue: #609194;
+$yellow: #f8e1b4;
+$orange: #F98A5F;
