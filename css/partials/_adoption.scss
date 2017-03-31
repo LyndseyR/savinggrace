@@ -1,0 +1,68 @@
+#adopt article {
+  padding: 2% 10%;
+}
+
+#adopt {
+  ul, ol {
+    margin-left: 3%;
+    li {
+      margin: 10px 0;
+    }
+  }
+}
+
+.why-adopt {
+  h2 {
+    text-align: center;
+    padding-bottom: 2%;
+  }
+}
+
+.list-header {
+  margin-top: 20px;
+}
+
+.avoid-problems {
+  background: $light-blue-opacity;
+  h2 {
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 2%;
+  }
+}
+
+.faq {
+  text-align: center;
+  button, .panel {
+    width: 80%;
+    margin: 0 auto;
+  }
+  button {
+    background: $orange;
+    text-align: center;
+    padding: 10px 0;
+    border: none;
+    margin-bottom: 1px;
+    outline: none;
+    // border-radius: 8px;
+  }
+  .panel {
+    margin-top: 5px;
+    margin-bottom: 15px;
+    padding-left: 15px;
+    text-align: left;
+    display: none;
+
+    p:nth-child(n+2){
+      padding: 10px 0;
+    }
+    a {
+      text-decoration: none;
+      color: #333;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  }
+}

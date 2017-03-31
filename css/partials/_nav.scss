@@ -1,0 +1,104 @@
+/////////////////////
+// Header///////////
+///////////////////
+
+header {
+  nav {
+  height: 75px;
+  background-color: $teal;
+  padding: 0 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  img {
+    height: 50px;
+  }
+    ul {
+      li {
+        display: inline-block;
+
+        a {
+          color: white;
+          padding:5px 0;
+          margin: 0 5px;
+          text-decoration: none;
+          border-bottom: 3px solid transparent;
+        }
+        a:hover {
+          font-weight: 700;
+          padding-bottom: 5px;
+          border-bottom: 3px solid #fff;
+        }
+        button {
+          background: transparent;
+          border: 1px solid #fff;
+          padding: 3px 6px;
+          border-radius: 8px;
+          margin-left: 10px;
+          a:hover {
+            text-decoration: none;
+            font-weight: normal;
+          }
+        }
+      }
+    }
+  }
+}
+
+// 4 Dog images
+
+.header-images {
+  // height: 225px;
+  // border: 10px solid blue;
+  // overflow: hidden;
+  width: 100%;
+  margin: 0;
+
+  img {
+    height: 255px;
+    // width: 100%;
+    box-sizing: border-box;
+    margin: 0;
+  }
+  img:nth-child(odd) {
+    border: 5px solid red;
+    width: 30%;
+    object-fit: cover;
+  }
+  img:nth-child(even) {
+    border: 5px solid black;
+    width: 19.5%;
+    object-fit: cover;
+  }
+}
+
+/////////////////////
+// Footer///////////
+///////////////////
+
+footer {
+  background: $teal;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5%;
+  img {
+    height: 50px;
+  }
+  .contact {
+    width: 70%;
+    p {
+      color: white;
+      text-align: right;
+      font-weight: 300;
+      a {
+        color: white;
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
