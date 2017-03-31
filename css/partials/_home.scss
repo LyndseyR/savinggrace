@@ -7,7 +7,7 @@
 #home {
 
 header {
-  background-image: url("http://cdn1.litlepups.net/resize/2017/03/09/medium-pet-adoption-maui-cat-15-theshelterpetproject-org-pet-adoption-is-on.jpg");
+  background-image: url("../images/home-images/home-hero.jpg");
   height:800px;
   width:100%;
   background-repeat:no-repeat;
@@ -15,80 +15,44 @@ header {
 }
 
 nav {
-
-  height:100px;
   border-bottom: 1px solid white;
 
-  .nav-left {
-    margin-left: 2%;
-    .paw {
-      height:100px;
-    }
-    .logo {
-      margin: 1% 0% 0% 2%;
-      font-family:'GoodDog';
-      font-size:70px;
 
-    }
-    .paw, .logo {
-      float:left;
+  .nav-left {
+    width:30%;
+
+    .logo {
+      margin-left: 5%;
+      margin-top: 5%;
     }
   }
 
   .nav-right {
     margin-right:5%;
-    ul {
+    margin-bottom:2.5%;
+    margin-top:-3%;
+    overflow:hidden;
+    clear:both;
 
-    }
     li {
       float:right;
       list-style: none;
-      // padding:30px;
       color:white;
       font-size:24px;
       font-weight: 300;
       padding: 0px 30px 0px 30px;
-      margin-top: 2.5%;
     }
     .donate {
-      border: 1px solid white;
       border-radius:8px;
+      line-height: 30px;
+      background: #25AA93;
+      border: 2px solid transparent;
+    }
+    .donate:hover {
+      border: 2px solid white;
     }
   }
-
-
-
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
