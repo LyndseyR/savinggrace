@@ -2,7 +2,7 @@
 // Header///////////
 ///////////////////
 
-header {
+.main-header {
   nav {
   height: 75px;
   background-color: $teal;
@@ -10,9 +10,11 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  img {
-    height: 50px;
-  }
+
+    img {
+      height: 50px;
+    }
+
     ul {
       li {
         display: inline-block;
@@ -36,7 +38,7 @@ header {
           border-radius: 8px;
           margin-left: 10px;
           a:hover {
-            text-decoration: none;
+            border-bottom: 3px solid transparent;
             font-weight: normal;
           }
         }
@@ -53,6 +55,7 @@ header {
   // overflow: hidden;
   width: 100%;
   margin: 0;
+  font-size: 0;
 
   img {
     height: 255px;
@@ -61,13 +64,11 @@ header {
     margin: 0;
   }
   img:nth-child(odd) {
-    border: 5px solid red;
     width: 30%;
     object-fit: cover;
   }
   img:nth-child(even) {
-    border: 5px solid black;
-    width: 19.5%;
+    width: 20%;
     object-fit: cover;
   }
 }
@@ -93,6 +94,7 @@ footer {
       text-align: right;
       font-weight: 300;
       a {
+        letter-spacing: .01rem;
         color: white;
         text-decoration: none;
       }

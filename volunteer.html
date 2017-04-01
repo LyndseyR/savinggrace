@@ -3,16 +3,74 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project Template</title>
+    <title>Volunteer</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body id='volunteer'>
 
-    <header></header>
+    <header class="main-header">
+      <nav>
+        <a href="index.html"><img src="images/header-images/saving-grace-logo.gif" alt="Saving Grace Logo"></a>
+        <ul>
+          <li><a href="dogs.html">Our Dogs</a></li>
+          <li><a href="adoption.html">Adoption</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="volunteer.html">Volunteer</a></li>
+          <li><button class="donate"><a href="#">Donate</a></button></li>
+        </ul>
+      </nav>
+      <div class="header-images">
+        <img src="images/header-images/dog1.jpg" alt=""/>
+        <img src="images/header-images/dog2.jpg" alt=""/>
+        <img src="images/header-images/dog3.jpg" alt=""/>
+        <img src="images/header-images/dog4.jpg" alt=""/>
+      </div>
+    </header>
 
-    <h1>Lyndsey's Page</h1>
+    <article class="volunteer clearfix">
+      <h2>Volunteers Needed</h2>
+      <p>Saving Grace always appreciates new volunteers! For safety and liability purposes, we require that all volunteers be at least 18 years of age. If you can help out during weekdays it would help us greatly, as this is the time we need the help most. If you are not yet 18, please consider helping by spreading the word, collecting monetary donations or collect supplies. Saving Grace appreciates donations of old blankets and towels, laundry supplies and several other items on our donations page. If you can help out during weekdays it would help us greatly, as this is the time we need the help most. </p>
+
+      <div class="form-float">
+        <!--Edit style in adoption.scss  -->
+        <p class="list-header">Volunteer opportunities include:</p>
+        <ul>
+          <li>Cleaning</li>
+          <li>Laundry</li>
+          <li>Assisting at adopt-a-thons</li>
+          <li>Walking dogs</li>
+          <li>Training the dogs basic manners</li>
+          <li>Socializing puppies</li>
+          <li>Transporting dogs to the vet or to be groomed</li>
+          <li>Grooming dogs</li>
+          <li>Taking digital pictures to update website</li>
+          <li>Filing medical histories and other paperwork</li>
+          <li>Mowing grass</li>
+          <li>Feeding dogs and giving them medications</li>
+        </ul>
+      </div>
+
+    <div class="form-float">
+      <form class="clearfix">
+          <p class="form-header">Sign up to Volunteer</p>
+          <div class="form-name">
+            <label for="firstName">First Name</label>
+            <input type="text" id="fname"firstName>
+          </div>
+          <div class="form-name">
+            <label for="lastName">Last Name</label>
+            <input type="text" id="lname"lastName>
+          </div>
+          <label for="address">Email</label>
+          <input type="text" id="email" name="address">
+          <input type="checkbox" name="age" id="checkage" value="Over18">Over 18
+          <input type="submit" value="Submit" id="submit">
+        </form>
+      </div>
+
+    </article>
 
     <footer></footer>
 
