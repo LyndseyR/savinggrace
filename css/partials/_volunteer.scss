@@ -74,10 +74,24 @@
     width: 100%;
     float: none;
   }
+  // .volunteer {
+  //   form {
+  //     input[type=text]{
+  //       border:10px solid red;
+  //     }
+  //   }
+  // }
   .form-float {
     width: 80%;
     margin:25px auto;
     float: none;
+  }
+  .form-header {
+    font-weight: 900;
+    font-size: 2rem;
+    width: 100%;
+    line-height: 1.2;
+    margin-bottom: 15px;
   }
   .foster {
     .content-float {
