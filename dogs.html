@@ -5,25 +5,350 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Our Dogs</title>
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/remodal.css">
+    <link rel="stylesheet" href="css/remodal-default-theme.css">
     <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
   </head>
-  <body id='dogs'>
+  <body id="dogs">
 
-    <header></header>
+    <header class="main-header">
+      <nav>
+        <a href="index.html"><img src="images/header-images/saving-grace-logo.gif" alt="Saving Grace Logo"></a>
+        <ul>
+          <li><a href="dogs.html">Our Dogs</a></li>
+          <li><a href="adoption.html">Adoption</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="volunteer.html">Volunteer</a></li>
+          <li><button class="donate"><a href="#">Donate</a></button></li>
+        </ul>
+      </nav>
+      <div class="header-images">
+        <img src="images/header-images/dog1.jpg" alt=""/>
+        <img src="images/header-images/dog2.jpg" alt=""/>
+        <img src="images/header-images/dog3.jpg" alt=""/>
+        <img src="images/header-images/dog4.jpg" alt=""/>
+      </div>
+    </header>
 
-    <h1>Our Dogs</h1>
+      <section class="section-margin">
+        <h2>Our Dogs</h2>
+        <script id="book-example" type="text/x-handlebars-template">
+          <div class="div-margin">
+          {{#each books}}
+          <article>
+            <img class="dog-images" src="images/dogs-images/{{cover}}.png" alt="{{name}}">
+            <div class="div-color div-{{color}}">
+              <a data-remodal-target="{{modal}}"><h5 class="a-{{color}}">{{name}}</h5></a>
+            </div>
+          </article>
+          {{/each}}
+        </div>
+        </script>
+      </section>
 
-    <footer></footer>
+
+    <section>
+        <div class="remodal remodal-teal" data-remodal-id="modal-Astro">
+          <button data-remodal-action="close" class="remodal-close"></button>
+          <img src="images/dogs-images/Astro.png" alt="Astro">
+          <article>
+            <h1>Astro</h1>
+            <p>Responsive, lightweight, fast, synchronized with CSS animations, fully customizable modal window plugin with declarative configuration and hash tracking.</p>
+          </article>
+        </div>
+    </section>
+
+    <section>
+        <div class="remodal remodal-light-blue" data-remodal-id="modal-Brook">
+          <button data-remodal-action="close" class="remodal-close"></button>
+          <img src="images/dogs-images/Brook.png" alt="Brook">
+          <article>
+            <h1>Brook</h1>
+            <p>Responsive, lightweight, fast, synchronized with CSS animations, fully customizable modal window plugin with declarative configuration and hash tracking.</p>
+          </article>
+        </div>
+    </section>
+
+    <section>
+        <div class="remodal remodal-dark-blue" data-remodal-id="modal-Celine">
+          <button data-remodal-action="close" class="remodal-close"></button>
+          <img src="images/dogs-images/Celine.png" alt="Celine">
+          <article>
+            <h1>Celine</h1>
+            <p>Responsive, lightweight, fast, synchronized with CSS animations, fully customizable modal window plugin with declarative configuration and hash tracking.</p>
+          </article>
+        </div>
+    </section>
+
+    <section>
+        <div class="remodal remodal-yellow" data-remodal-id="modal-Cha-Cha">
+          <button data-remodal-action="close" class="remodal-close"></button>
+          <img src="images/dogs-images/Cha-Cha.png" alt="Cha Cha">
+          <article>
+            <h1>Cha Cha</h1>
+            <p>Responsive, lightweight, fast, synchronized with CSS animations, fully customizable modal window plugin with declarative configuration and hash tracking.</p>
+          </article>
+        </div>
+    </section>
+
+    <section>
+        <div class="remodal remodal-orange" data-remodal-id="modal-Chops">
+          <button data-remodal-action="close" class="remodal-close"></button>
+          <img src="images/dogs-images/Chops.png" alt="Chops">
+          <article>
+            <h1>Chops</h1>
+            <p>Responsive, lightweight, fast, synchronized with CSS animations, fully customizable modal window plugin with declarative configuration and hash tracking.</p>
+          </article>
+        </div>
+    </section>
+
+    <section>
+        <div class="remodal remodal-teal" data-remodal-id="modal-Copper">
+          <button data-remodal-action="close" class="remodal-close"></button>
+          <img src="images/dogs-images/Copper.png" alt="Copper">
+          <article>
+            <h1>Copper</h1>
+            <p>Responsive, lightweight, fast, synchronized with CSS animations, fully customizable modal window plugin with declarative configuration and hash tracking.</p>
+          </article>
+        </div>
+    </section>
+
+    <section>
+        <div class="remodal remodal-light-blue" data-remodal-id="modal-Dahlia">
+          <button data-remodal-action="close" class="remodal-close"></button>
+          <img src="images/dogs-images/Dahlia.png" alt="Dahlia">
+          <article>
+            <h1>Dahlia</h1>
+            <p>Responsive, lightweight, fast, synchronized with CSS animations, fully customizable modal window plugin with declarative configuration and hash tracking.</p>
+          </article>
+        </div>
+    </section>
+
+    <section>
+        <div class="remodal remodal-dark-blue" data-remodal-id="modal-Darryl">
+          <button data-remodal-action="close" class="remodal-close"></button>
+          <img src="images/dogs-images/Darryl.png" alt="Darryl">
+          <article>
+            <h1>Darryl</h1>
+            <p>Responsive, lightweight, fast, synchronized with CSS animations, fully customizable modal window plugin with declarative configuration and hash tracking.</p>
+          </article>
+        </div>
+    </section>
+
+    <section>
+        <div class="remodal remodal-yellow" data-remodal-id="modal-Dugar">
+          <button data-remodal-action="close" class="remodal-close"></button>
+          <img src="images/dogs-images/Dugar.png" alt="Dugar">
+          <article>
+            <h1>Dugar</h1>
+            <p>Responsive, lightweight, fast, synchronized with CSS animations, fully customizable modal window plugin with declarative configuration and hash tracking.</p>
+          </article>
+        </div>
+    </section>
+
+    <section>
+        <div class="remodal remodal-orange" data-remodal-id="modal-Duncan">
+          <button data-remodal-action="close" class="remodal-close"></button>
+          <img src="images/dogs-images/Duncan.png" alt="Duncan">
+          <article>
+            <h1>Duncan</h1>
+            <p>Responsive, lightweight, fast, synchronized with CSS animations, fully customizable modal window plugin with declarative configuration and hash tracking.</p>
+          </article>
+        </div>
+    </section>
+
+    <section>
+        <div class="remodal remodal-teal" data-remodal-id="modal-Empress">
+          <button data-remodal-action="close" class="remodal-close"></button>
+          <img src="images/dogs-images/Empress.png" alt="Empress">
+          <article>
+            <h1>Empress</h1>
+            <p>Responsive, lightweight, fast, synchronized with CSS animations, fully customizable modal window plugin with declarative configuration and hash tracking.</p>
+          </article>
+        </div>
+    </section>
+
+    <section>
+        <div class="remodal remodal-light-blue" data-remodal-id="modal-Gavin">
+          <button data-remodal-action="close" class="remodal-close"></button>
+          <img src="images/dogs-images/Gavin.png" alt="Gavin">
+          <article>
+            <h1>Gavin</h1>
+            <p>Responsive, lightweight, fast, synchronized with CSS animations, fully customizable modal window plugin with declarative configuration and hash tracking.</p>
+          </article>
+        </div>
+    </section>
+
+    <section>
+        <div class="remodal remodal-dark-blue" data-remodal-id="modal-Katie">
+          <button data-remodal-action="close" class="remodal-close"></button>
+          <img src="images/dogs-images/Katie.png" alt="Katie">
+          <article>
+            <h1>Katie</h1>
+            <p>Responsive, lightweight, fast, synchronized with CSS animations, fully customizable modal window plugin with declarative configuration and hash tracking.</p>
+          </article>
+        </div>
+    </section>
+
+    <section>
+        <div class="remodal remodal-yellow" data-remodal-id="modal-Keller">
+          <button data-remodal-action="close" class="remodal-close"></button>
+          <img src="images/dogs-images/Keller.png" alt="Keller">
+          <article>
+            <h1>Keller</h1>
+            <p>Responsive, lightweight, fast, synchronized with CSS animations, fully customizable modal window plugin with declarative configuration and hash tracking.</p>
+          </article>
+        </div>
+    </section>
+
+    <section>
+        <div class="remodal remodal-orange" data-remodal-id="modal-Lucky">
+          <button data-remodal-action="close" class="remodal-close"></button>
+          <img src="images/dogs-images/Lucky.png" alt="Lucky">
+          <article>
+            <h1>Lucky</h1>
+            <p>Responsive, lightweight, fast, synchronized with CSS animations, fully customizable modal window plugin with declarative configuration and hash tracking.</p>
+          </article>
+        </div>
+    </section>
+
+    <section>
+        <div class="remodal remodal-teal" data-remodal-id="modal-Nova">
+          <button data-remodal-action="close" class="remodal-close"></button>
+          <img src="images/dogs-images/Nova.png" alt="Nova">
+          <article>
+            <h1>Nova</h1>
+            <p>Responsive, lightweight, fast, synchronized with CSS animations, fully customizable modal window plugin with declarative configuration and hash tracking.</p>
+          </article>
+        </div>
+    </section>
+
+    <section>
+        <div class="remodal remodal-light-blue" data-remodal-id="modal-Popcorn">
+          <button data-remodal-action="close" class="remodal-close"></button>
+          <img src="images/dogs-images/Popcorn.png" alt="Popcorn">
+          <article>
+            <h1>Popcorn</h1>
+            <p>Responsive, lightweight, fast, synchronized with CSS animations, fully customizable modal window plugin with declarative configuration and hash tracking.</p>
+          </article>
+        </div>
+    </section>
+
+    <section>
+        <div class="remodal remodal-dark-blue" data-remodal-id="modal-Queen">
+          <button data-remodal-action="close" class="remodal-close"></button>
+          <img src="images/dogs-images/Queen.png" alt="Queen">
+          <article>
+            <h1>Queen</h1>
+            <p>Responsive, lightweight, fast, synchronized with CSS animations, fully customizable modal window plugin with declarative configuration and hash tracking.</p>
+          </article>
+        </div>
+    </section>
+
+    <section>
+        <div class="remodal remodal-yellow" data-remodal-id="modal-Quincy">
+          <button data-remodal-action="close" class="remodal-close"></button>
+          <img src="images/dogs-images/Quincy.png" alt="Quincy">
+          <article>
+            <h1>Quincy</h1>
+            <p>Responsive, lightweight, fast, synchronized with CSS animations, fully customizable modal window plugin with declarative configuration and hash tracking.</p>
+          </article>
+        </div>
+    </section>
+
+    <section>
+        <div class="remodal remodal-orange" data-remodal-id="modal-Tammy">
+          <button data-remodal-action="close" class="remodal-close"></button>
+          <img src="images/dogs-images/Tammy.png" alt="Tammy">
+          <article>
+            <h1>Tammy</h1>
+            <p>Responsive, lightweight, fast, synchronized with CSS animations, fully customizable modal window plugin with declarative configuration and hash tracking.</p>
+          </article>
+        </div>
+    </section>
+
+    <section>
+        <div class="remodal remodal-teal" data-remodal-id="modal-Taylor">
+          <button data-remodal-action="close" class="remodal-close"></button>
+          <img src="images/dogs-images/Taylor.png" alt="Taylor">
+          <article>
+            <h1>Taylor</h1>
+            <p>Responsive, lightweight, fast, synchronized with CSS animations, fully customizable modal window plugin with declarative configuration and hash tracking.</p>
+          </article>
+        </div>
+    </section>
+
+    <section>
+        <div class="remodal remodal-light-blue" data-remodal-id="modal-Tiki">
+          <button data-remodal-action="close" class="remodal-close"></button>
+          <img src="images/dogs-images/Tiki.png" alt="Tiki">
+          <article>
+            <h1>Tiki</h1>
+            <p>Responsive, lightweight, fast, synchronized with CSS animations, fully customizable modal window plugin with declarative configuration and hash tracking.</p>
+          </article>
+        </div>
+    </section>
+
+    <section>
+        <div class="remodal remodal-dark-blue" data-remodal-id="modal-Violet">
+          <button data-remodal-action="close" class="remodal-close"></button>
+          <img src="images/dogs-images/Violet.png" alt="Violet">
+          <article>
+            <h1>Violet</h1>
+            <p>Responsive, lightweight, fast, synchronized with CSS animations, fully customizable modal window plugin with declarative configuration and hash tracking.</p>
+          </article>
+        </div>
+    </section>
+
+    <section>
+        <div class="remodal remodal-yellow" data-remodal-id="modal-Wendy">
+          <button data-remodal-action="close" class="remodal-close"></button>
+          <img src="images/dogs-images/Wendy.png" alt="Wendy">
+          <article>
+            <h1>Wendy</h1>
+            <p>Responsive, lightweight, fast, synchronized with CSS animations, fully customizable modal window plugin with declarative configuration and hash tracking.</p>
+          </article>
+        </div>
+    </section>
+
+    <section>
+        <div class="remodal remodal-orange" data-remodal-id="modal-Zazzle">
+          <button data-remodal-action="close" class="remodal-close"></button>
+          <img src="images/dogs-images/Zazzle.png" alt="Zazzle">
+          <article>
+            <h1>Zazzle</h1>
+            <p>Responsive, lightweight, fast, synchronized with CSS animations, fully customizable modal window plugin with declarative configuration and hash tracking.</p>
+          </article>
+        </div>
+    </section>
+
+    <section>
+        <div class="remodal remodal-teal" data-remodal-id="modal-Zelda">
+          <button data-remodal-action="close" class="remodal-close"></button>
+          <img src="images/dogs-images/Zelda.png" alt="Zelda">
+          <article>
+            <h1>Zelda</h1>
+            <p>Responsive, lightweight, fast, synchronized with CSS animations, fully customizable modal window plugin with declarative configuration and hash tracking.</p>
+          </article>
+        </div>
+    </section>
+
+    <!-- <footer>
+      <img src="images/header-images/saving-grace-logo.gif" alt="Saving Grace Logo">
+      <div class="contact"><p>Phone: 910.518.1180 &nbsp;&nbsp; | &nbsp;&nbsp; Email: <a href="mailto:savinggrace@savinggracenc.org" target="_blank">savinggrace@savinggracenc.org</a> &nbsp;&nbsp; | &nbsp;&nbsp; Address: 13400 Old Creedmoor Rd Wake Forest, NC 27587</p></div>
+    </footer> -->
 
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.js"></script>
+    <script src="js/remodal.js"></script>
     <script src="js/script.js"></script>
 
-    <script>
+    <!-- <script>
       $('header').load('includes/header.html');
       $('footer').load('includes/footer.html');
-    </script>
+    </script> -->
 
   </body>
 </html>
