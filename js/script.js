@@ -28,3 +28,16 @@ for (i = 0; i < acc.length; i++) {
         }
     }
 }
+
+// Styling for Random Image in main header
+// Not working yet.. will keep trying to figure out this afternoon
+var images = [
+  'images/header-images/dog1.jpg',
+  'images/header-images/dog2.jpg',
+  'images/header-images/dog3.jpg',
+  'images/header-images/dog4.jpg',
+]
+var which = Math.floor(Math.random() * images.length);
+var img = document.getElementsByClassName(.'theimage');
+img.src = images[which];
+img.title = images[which];
