@@ -6,15 +6,15 @@
 .mobile-nav {
   height:75px;
   background-color: $teal;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+  display: none;
+  // justify-content: space-around;
+  // align-items: center;
   // display: none;
   // position: fixed;
   top:0;
   width:100%;
   z-index: 100;
-  opacity: 30;
+  // opacity: 30;
 
   img {
     height:50px;

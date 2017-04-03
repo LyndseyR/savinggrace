@@ -10,7 +10,10 @@
   </head>
   <body id='volunteer'>
 
-    <header class="main-header"></header>
+    <header class="main-header">
+      <div class="main-nav"></div>
+      <div class="header-images"></div>
+    </header>
 
     <article class="volunteer clearfix">
       <h2>Volunteers Needed</h2>
@@ -99,7 +102,8 @@
     <script src="js/script.js"></script>
 
     <script>
-      $('header').load('includes/header.html');
+      $('.main-nav').load('includes/nav.html');
+      $('.header-images').load('includes/header-images.html');
       $('footer').load('includes/footer.html');
     </script>
 
