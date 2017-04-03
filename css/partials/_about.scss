@@ -1,0 +1,46 @@
+#about .mission-background {
+  background: $light-blue-opacity;
+  height: auto;
+  margin: 0 0;
+  width: 100%;
+}
+
+#about .header-padding {
+  padding: 2% 10%;
+}
+
+#about .paragraph-padding {
+  padding: 0% 10% 2% 10%;
+}
+
+#about .paragraph-size {
+  font-size: 1.25rem;
+}
+
+#about #signature {
+  padding-top: 4%;
+  padding-right: 10%;
+  float: right;
+}
+
+#about .header-padding-2 {
+  padding: 2% 10% 1% 10%;
+}
+
+#about .bio-left {
+  height: auto;
+  margin: 3% 5% 3% 10%;
+  width: 40%;
+
+  img {
+    float: left;
+    height: 250px;
+    width: 40%;
+  }
+
+  p {
+    margin-left: 50px;
+    float: left;
+    width: 40%
+  }
+}

@@ -54,6 +54,130 @@ nav {
   }
 }
 
+.welcome {
+
+  .welcome-small {
+    margin-left:5%;
+    padding:30px;
+
+    .paw, .welcome-content {
+      float:left;
+      text-align: center;
+    }
+    .paw {
+      height:100px;
+    }
+    .paw1 {
+      padding-right:50px;
+      padding-top: 25px;
+    }
+    .paw2 {
+      padding-left:50px;
+      padding-top: 25px;
+    }
+    .welcome-content {
+      width:70%;
+    }
+  }
+}
+
+.cards {
+  .cards-small{
+    .adoption, .program, .good {
+      // height:500px;
+      width:30%;
+      // border:1px solid black;
+      overflow:hidden;
+      float:left;
+      margin:1%;
+    }
+    .adoption {
+      background:#25AA93;
+      text-align: center;
+      .learn-more {
+        height:50px;
+        width:150px;
+        color:white;
+        border-radius: 8px;
+        background:#25AA93;
+        border:1px solid white;
+      }
+      padding-bottom: 20px;
+    }
+    .program {
+      background:#92DCE0;
+      text-align: center;
+      .learn-more {
+        height:50px;
+        width:150px;
+        color:white;
+        border-radius: 8px;
+        background:#92DCE0;
+        border:1px solid white;
+      }
+      padding-bottom: 20px;
+    }
+    .good {
+      background:#F98A5F;
+      text-align:center;
+      .learn-more {
+        height:50px;
+        width:150px;
+        color:white;
+        border-radius: 8px;
+        background:#F98A5F;
+        border:1px solid white;
+      }
+      .good-image {
+        height:245px;
+      }
+      padding-bottom: 20px;
+    }
+  }
+}
+
+.matchmaker {
+  height:600px;
+  overflow:hidden;
+  clear:both;
+}
+
+.spotlight {
+  height:600px;
+  overflow:hidden;
+  clear:both;
+}
+
+.sign-up {
+  height:200px;
+  background:#F98A5F;
+  color:white;
+  text-align: center;
+  .sign-up-small {
+    padding-top:20px;
+    input {
+      color:grey;
+      width:400px;
+      height:25px;
+      border-radius: 8px;
+      border:none;
+    }
+  }
+  .stay-updated {
+    height:50px;
+    width:150px;
+    color:white;
+    border-radius: 8px;
+    background:#F98A5F;
+    border:1px solid white;
+  }
+}
+
+
+
+
+
+
 
 
 

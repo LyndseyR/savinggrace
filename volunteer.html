@@ -10,30 +10,13 @@
   </head>
   <body id='volunteer'>
 
-    <header class="main-header">
-      <nav>
-        <a href="index.html"><img src="images/header-images/saving-grace-logo.gif" alt="Saving Grace Logo"></a>
-        <ul>
-          <li><a href="dogs.html">Our Dogs</a></li>
-          <li><a href="adoption.html">Adoption</a></li>
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="volunteer.html">Volunteer</a></li>
-          <li><button class="donate"><a href="#">Donate</a></button></li>
-        </ul>
-      </nav>
-      <div class="header-images">
-        <img src="images/header-images/dog1.jpg" alt=""/>
-        <img src="images/header-images/dog2.jpg" alt=""/>
-        <img src="images/header-images/dog3.jpg" alt=""/>
-        <img src="images/header-images/dog4.jpg" alt=""/>
-      </div>
-    </header>
+    <header class="main-header"></header>
 
     <article class="volunteer clearfix">
       <h2>Volunteers Needed</h2>
       <p>Saving Grace always appreciates new volunteers! For safety and liability purposes, we require that all volunteers be at least 18 years of age. If you can help out during weekdays it would help us greatly, as this is the time we need the help most. If you are not yet 18, please consider helping by spreading the word, collecting monetary donations or collect supplies. Saving Grace appreciates donations of old blankets and towels, laundry supplies and several other items on our donations page. If you can help out during weekdays it would help us greatly, as this is the time we need the help most. </p>
 
-      <div class="form-float">
+      <div class="content-float">
         <!--Edit style in adoption.scss  -->
         <p class="list-header">Volunteer opportunities include:</p>
         <ul>
@@ -53,8 +36,32 @@
       </div>
 
     <div class="form-float">
-      <form class="clearfix">
+      <form>
           <p class="form-header">Sign up to Volunteer</p>
+          <!-- <div class="form-name"> -->
+            <label for="firstName">First Name</label>
+            <input type="text" id="fname"firstName>
+          <!-- </div> -->
+          <!-- <div class="form-name"> -->
+            <label for="lastName">Last Name</label>
+            <input type="text" id="lname"lastName>
+          <!-- </div> -->
+          <label for="address">Email</label>
+          <input type="text" id="email" name="address">
+          <input type="checkbox" name="age" id="checked" value="Over18">Yes, I am over 18
+          <input type="submit" value="Submit" id="submit">
+        </form>
+      </div>
+    </article>
+
+    <article class="foster clearfix">
+      <h2>Fosters Needed</h2>
+      <div class="content-float">
+        <p>We are always in need of loving foster parents! If you are interested in our foster program please email us at savinggrace@savinggracenc.org. We will schedule a time to meet with you in person. Download the Foster Agreement, read it carefully, as you will need to sign that you agree to the terms. You will need to bring in a signed contract when we meet.</p>
+      </div>
+      <div class="form-float clearfix">
+        <form>
+          <p class="form-header">Learn More About Fostering</p>
           <div class="form-name">
             <label for="firstName">First Name</label>
             <input type="text" id="fname"firstName>
@@ -65,11 +72,10 @@
           </div>
           <label for="address">Email</label>
           <input type="text" id="email" name="address">
-          <input type="checkbox" name="age" id="checkage" value="Over18">Over 18
-          <input type="submit" value="Submit" id="submit">
-        </form>
-      </div>
 
+          <input type="submit" value="Submit" id="submit">
+          </form>
+      </div>
     </article>
 
     <footer></footer>

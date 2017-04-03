@@ -11,7 +11,7 @@
   }
 }
 
-.why-adopt, .faq, .volunteer {
+.why-adopt, .faq, .volunteer, .foster {
   h2 {
     text-align: center;
     padding-bottom: 2%;
@@ -25,7 +25,7 @@
 .avoid-problems {
   background: $light-blue-opacity;
   h2 {
-    width: 70%;
+    width: 80%;
     margin: 0 auto;
     text-align: center;
     padding-bottom: 2%;
@@ -69,6 +69,43 @@
     }
     a:hover {
       text-decoration: underline;
+    }
+  }
+}
+
+// Media Queries
+
+@media (max-width: 767px){
+  #adopt article, #volunteer article {
+    padding: 2% 5%;
+  }
+
+  #adopt, #volunteer {
+    ul, ol {
+      margin-left: 3%;
+      li {
+        margin: 10px 0;
+      }
+    }
+  }
+  .why-adopt, .faq, .volunteer, .foster {
+    h2 {
+      text-align: center;
+      padding-bottom: 1%;
+      font-size:1.5rem;
+    }
+  }
+
+  .avoid-problems {
+    h2 {
+      width: 100%;
+      text-align: center;
+      padding-bottom: 1%;
+      font-size:1.5rem;
+    }
+    .box {
+      width: 100%;
+      float: none;
     }
   }
 }

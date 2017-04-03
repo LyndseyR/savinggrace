@@ -1,3 +1,14 @@
+
+/////////////////////////
+// Hamburger Menu //////
+/////////////////////////
+
+$(document).ready(function(){
+  $('.hamburger').click(function(){
+    $('.hamburger-menu').slideToggle('slow');
+  });
+});
+
 //Styling for FAQ accordian questions
 var acc = document.getElementsByClassName("accordion");
 var i;
@@ -17,6 +28,7 @@ for (i = 0; i < acc.length; i++) {
         }
     }
 }
+
 
 
 //Handlebars for Our Dogs page
