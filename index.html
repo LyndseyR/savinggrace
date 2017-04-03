@@ -12,21 +12,8 @@
   </head>
   <body id='home'>
 
-    <header>
-      <nav>
-        <div class="nav-left">
-          <img src="images/home-images/Saving Grace Logo.png" class="logo" alt="">
-        </div>
-        <div class="nav-right">
-          <ul>
-            <a href="#"><li class="donate">Donate</li></a>
-            <a href="#"><li>About</li></a>
-            <a href="#"><li>Volunteer</li></a>
-            <a href="#"><li>Adoption</li></a>
-            <a href="#"><li>Our Dogs</li></a>
-          </ul>
-        </div>
-      </nav>
+    <header class="main-header">
+      <div class="main-nav"></div>
     </header>
 
     <section class="welcome">
@@ -71,17 +58,57 @@
           <h3>Good dog!</h3>
           <br>
           <p>The dogs that come to Saving Grace are hand-picked as the best dogs in the world, and then they get even better! We only select dogs that get along with other dogs and people. We can help you pick those that would get along best with a family.</p>
-          <br>
+
           <button type="text" class="learn-more">Learn more!</button>
         </div>
       </div>
     </section>
 
     <section class="matchmaker">
-      <h1>Matchmaker section here</h1>
+
+      <div class="matchmaker-small">
+        <h1>Matchmaker</h1>
+        <img src="images/header-images/dogs8.jpg" class="matchmaker-image" alt="">
+        <br><br>
+        <p>Saving Grace keeps about 60 to 80 dogs available for adoption and generally has a variety of sizes, shapes, ages and temperaments. When an adopting family comes to Saving Grace, we want to learn as much about you as we know about our dogs.</p>
+        <a href="#"><button type="text" class="matchmaker-button">Get matched!</button></a>
+        <br><br>
+      </div>
+
+      <br>
+
+      <div class="question-one">
+        <h1>Matchmaker</h1>
+        <br>
+        <h3>1. What type of personality are you looking for?</h3>
+        <br>
+        <button type="button" name="button" class="select">Playful</button>
+        <br><br>
+        <button type="button" name="button">Couch Potato</button>
+        <br><br>
+        <button type="button" name="button">Adventurous</button>
+        <br><br>
+        <button type="button" name="button" class="select">Mama's Boy</button>
+        <br><br>
+        <button type="button" name="button">Lion</button>
+        <br><br><br>
+        <div class="">
+        <button type="text" class="next">Next question! <span>&#8594;</span></button>
+
+        </div>
+        <br><br>
+      </div>
     </section>
+
+    <br>
+
     <section class="spotlight">
-      <h1>Spotlight section here</h1>
+      <h1>Spotlight</h1>
+      <div class="spotlight-small">
+        <img src="images/home-images/spotlight-paw.gif" class="spotlight-image"alt="">
+        <br>
+        <p>Bumper is one special dude! He has limited vision, most likely born with vision impairment but that does not stop him from having a great time and loving every day. He has a goofy personality and is determined to make everyone his friend. He is about 1 year old and weighs about 65lbs. Bumper is a very happy dog and truly has a zest for life no matter what each day throws his way. He is a lab mix, a handsome guy for sure and he knows it. His front legs are a little shorter than his rear which makes for an uneven gate but that only adds to his character. Bumper is good in his crate, he does best in a familiar environment and once he knows his territory, gets around just fine. He plays hard with other dogs and is a good playmate for bigger dogs who donât mind wrestling with a big goof ball. If you are looking for a good time, call Bumper! He is always ready to make a new friend and you will not be sorry. If interested in meeting Bumper, please email an adoption request to Saving Grace. He is available for an adoption fee of $350 that includes his vaccines, microchip, neuter and monthly preventatives. Bumper is always the life of the party and is ready to bring his happiness to your home! </p>
+    </div>
     </section>
 
     <section class="sign-up">
@@ -90,7 +117,7 @@
         <br>
         <input type="text" name="" value="Email Address">
         <br><br>
-        <button type="text" class="stay-updated">Stay updated!</button>
+        <a href="#"><button type="text" class="stay-updated">Stay updated!</button></a>
     </div>
     </section>
 
@@ -98,14 +125,15 @@
 
 
 
-    <!-- <footer></footer> -->
+
+
+    <footer></footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="js/script.js"></script>
-
     <script>
-      // $('header').load('includes/header.html');
-      // $('footer').load('includes/footer.html');
+      $('.main-nav').load('includes/nav.html');
+      $('footer').load('includes/footer.html');
     </script>
 
   </body>

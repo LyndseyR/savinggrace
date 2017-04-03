@@ -1,7 +1,6 @@
 @font-face {
   font-family: GoodDog;
   src:url('../fonts/GOODDP__.TTF');
-
 }
 
 #home {
@@ -16,8 +15,6 @@ header {
 
 nav {
   border-bottom: 1px solid white;
-
-
   .nav-left {
     width:30%;
 
@@ -82,17 +79,16 @@ nav {
 }
 
 .cards {
+  margin-left:4%;
   .cards-small{
     .adoption, .program, .good {
-      // height:500px;
       width:30%;
-      // border:1px solid black;
       overflow:hidden;
       float:left;
       margin:1%;
     }
     .adoption {
-      background:#25AA93;
+      background: rgba(37,170,147,.75);
       text-align: center;
       .learn-more {
         height:50px;
@@ -100,12 +96,12 @@ nav {
         color:white;
         border-radius: 8px;
         background:#25AA93;
-        border:1px solid white;
+        border:none;
       }
       padding-bottom: 20px;
     }
     .program {
-      background:#92DCE0;
+      background:rgba(146,220,224,.50);
       text-align: center;
       .learn-more {
         height:50px;
@@ -113,12 +109,12 @@ nav {
         color:white;
         border-radius: 8px;
         background:#92DCE0;
-        border:1px solid white;
+        border:none;
       }
       padding-bottom: 20px;
     }
     .good {
-      background:#F98A5F;
+      background:rgba(249,138,95,.50);
       text-align:center;
       .learn-more {
         height:50px;
@@ -126,26 +122,14 @@ nav {
         color:white;
         border-radius: 8px;
         background:#F98A5F;
-        border:1px solid white;
+        border:none;
       }
       .good-image {
-        height:245px;
+        height:235px;
       }
       padding-bottom: 20px;
     }
   }
-}
-
-.matchmaker {
-  height:600px;
-  overflow:hidden;
-  clear:both;
-}
-
-.spotlight {
-  height:600px;
-  overflow:hidden;
-  clear:both;
 }
 
 .sign-up {
@@ -171,9 +155,109 @@ nav {
     background:#F98A5F;
     border:1px solid white;
   }
+  .stay-updated:hover {
+    border: 2px solid white;
+  }
 }
 
+.matchmaker {
+  overflow:hidden;
+  clear:both;
+  h1 {
+    text-align: center;
+    line-height: 0;
+  }
+  img {
+    margin-left:22%;
+    margin-right:22%;
+  }
+  .matchmaker-small {
+    width:800px;
+    border:1px solid black;
+    margin:0 auto;
+    .matchmaker-image {
+      height:300px;
+    }
+    p {
+      text-align: center;
+      padding: 0 50px 25px 50px;
 
+    }
+    .matchmaker-button {
+      width:40%;
+      height:50px;
+      color:white;
+      background:#609194;
+      font-size:22px;
+      border-radius:8px;
+      border:none;
+      margin-left:30%;
+    }
+  }
+  .question-one{
+    // display:none;
+    width:800px;
+    margin:0 auto;
+    text-align: center;
+    color:white;
+    border:1px solid black;
+    background:#609194;
+    button {
+      height:50px;
+      width:200px;
+      border-radius:8px;
+      border:1px solid white;
+      background:transparent;
+      color:white;
+      font-size:22px;
+    }
+    .next {
+      width:400px;
+    }
+    .select {
+      background:#25AA93;
+    }
+    img {
+      height:20px;
+    }
+  }
+}
+
+.spotlight {
+  overflow:hidden;
+  clear:both;
+  background:rgba(146,220,224,.50);
+  padding:20px;
+  h1 {
+    text-align:center;
+    line-height: 0;
+  }
+  .spotlight-small
+  img, p {
+    float:left;
+    padding:20px;
+  }
+  p {
+    width:60%;
+    font-size:18px;
+  }
+  img {
+    height:350px;
+  }
+
+}
+
+@media (max-width: 1200px){
+  .paw1, .paw2 {
+    display:none;
+  }
+}
+
+@media (max-width: 767px){
+  .welcome-content {
+    margin-left:10%;
+  }
+}
 
 
 
