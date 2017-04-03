@@ -98,6 +98,9 @@ nav {
         background:#25AA93;
         border:none;
       }
+      button:hover {
+        border:2px solid white;
+      }
       padding-bottom: 20px;
     }
     .program {
@@ -111,6 +114,9 @@ nav {
         background:#92DCE0;
         border:none;
       }
+      button:hover {
+        border:2px solid white;
+      }
       padding-bottom: 20px;
     }
     .good {
@@ -123,6 +129,9 @@ nav {
         border-radius: 8px;
         background:#F98A5F;
         border:none;
+      }
+      button:hover {
+        border:2px solid white;
       }
       .good-image {
         height:235px;
@@ -211,8 +220,14 @@ nav {
       color:white;
       font-size:22px;
     }
+    button:hover {
+      border:2px solid white;
+    }
     .next {
       width:400px;
+    }
+    .next:hover {
+      border:2px solid white;
     }
     .select {
       background:#25AA93;
