@@ -9,11 +9,12 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  position: fixed;
+  // display: none;
+  // position: fixed;
   top:0;
   width:100%;
   z-index: 100;
-  opacity: 0;
+  opacity: 30;
 
   img {
     height:50px;
@@ -90,7 +91,7 @@
       li {
         display: inline-block;
         a {
-          color: white;
+          color: #fff;
           padding:5px 0;
           margin: 0 5px;
           text-decoration: none;
@@ -160,6 +161,7 @@ footer {
       color: white;
       text-align: right;
       font-weight: 300;
+      font-size: .9rem;
       a {
         letter-spacing: .01rem;
         color: white;
@@ -195,15 +197,18 @@ footer {
     }
   }
   .mobile-nav{
-    opacity:100;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
   }
 
   .header-images {
 
-    img:nth-child(odd) {
+    img:nth-child(even) {
       display: none;
     }
-    img:nth-child(even) {
+    img:nth-child(odd) {
       width: 50%;
     }
   }
@@ -213,9 +218,13 @@ footer {
       display: none;
     }
     .contact {
-      text-align: center;
       display: inline-block;
       width:100%;
+      border: 5px solid blue;
+      text-align: center;
+      p {
+        text-align: center;
+      }
     }
   }
 }
