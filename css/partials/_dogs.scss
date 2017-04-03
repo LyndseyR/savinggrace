@@ -3,7 +3,10 @@
 }
 
 #dogs .div-margin {
-  margin: 1.75% 7%;
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-between;
+  margin: 1.75% 8% 0% 8%;
 }
 
 #dogs article {
