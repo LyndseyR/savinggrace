@@ -82,7 +82,7 @@ h4 {
     .hamburger-menu li a:hover {
       background: #fff;
       color: #28BE9B;
-      font-size: 700; }
+      font-weight: 700; }
 
 .main-header .desktop-nav {
   height: 75px;
