@@ -268,7 +268,6 @@ $(function () {
 
 // radnom images
 
-<<<<<<< HEAD
 $(document).ready(function () {
         $('.dogImage1').hide().fadeIn(3000);
     });
