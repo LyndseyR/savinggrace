@@ -33,10 +33,7 @@ for (i = 0; i < acc.length; i++) {
 
 //Handlebars for Our Dogs page
 $(function () {
-  var source = $("#book-example").html();
-  var template = Handlebars.compile(source);
-
-  var context = {
+  var data = {
     books: [{
       name: "Astro",
       cover: "Astro",
@@ -170,8 +167,10 @@ $(function () {
     }]
   };
 
-  var compiled = template(context);
-  $(document.body).append(compiled);
+  var source = $.trim($("#book-example").html());
+  var template = Handlebars.compile(source);
+  var html = template(data);
+  $("#dog-container").append(html);
 });
 
 
@@ -262,7 +261,7 @@ $(function () {
   };
 
   var compiled = template(context);
-  $(document.body).append(compiled);
+  $('#dog-container').append(compiled);
 });
 
 
