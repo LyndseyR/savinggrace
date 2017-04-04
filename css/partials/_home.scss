@@ -6,11 +6,17 @@
 #home {
 
 header {
+  overflow: hidden;
   background-image: url("../images/home-images/home-hero.jpg");
   height:800px;
   width:100%;
   background-repeat:no-repeat;
   background-size: cover;
+  h1 {
+    width:35%;
+    padding:25% 5% 10% 60%;
+    font-size: 64px;
+  }
 }
 
 nav {
@@ -142,7 +148,7 @@ nav {
 }
 
 .sign-up {
-  height:200px;
+  // height:200px;
   background:#F98A5F;
   color:white;
   text-align: center;
@@ -269,6 +275,7 @@ nav {
 
 }
 
+
 @media (max-width: 767px){
   .welcome-content {
     margin-left:10%;
@@ -281,10 +288,42 @@ nav {
     margin-left:20%;
     margin-right:20%;
   }
+  .paw1, .paw2 {
+    display:none;
+  }
+  header h1 {
+    padding: 25% 0% 0% 5%;
+  }
+  .cards {
+    .cards-small{
+      .adoption, .program, .good {
+        width:70%;
+        overflow:hidden;
+        float:none;
+        margin:0 auto;
+      }
+    }
+  }
 }
 
-@media (max-width: 375px){
-
+@media (max-width: 378px){
+  .spotlight-image {
+    margin-left:0;
+  }
+  .spotlight .spotlight-small
+  img, .spotlight p {
+    padding: 0px;
+  }
+  .sign-up .sign-up-small input {
+    width:250px;
+  }
+  .matchmaker .matchmaker-small .matchmaker-button {
+    width:60%;
+    margin:0 20%;
+  }
+  header h1 {
+    padding: 25% 0% 0% 10%;
+  }
 }
 
 
