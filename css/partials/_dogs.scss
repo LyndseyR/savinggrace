@@ -28,19 +28,16 @@
   width: 100%;
 }
 
-#dogs .dog-images:hover {
-  filter: none;
-}
-
 #dogs .div-color {
   align-items: center;
   display: flex;
   height: 75px;
   justify-content: center;
   width: 100%;
+  cursor: pointer;
 }
 
-#dogs .div-color:hover .dog-images {
+#dogs article:hover img{
   filter: none;
 }
 
