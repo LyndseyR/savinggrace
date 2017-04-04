@@ -27,6 +27,11 @@
   padding: 2% 10% 1% 10%;
 }
 
+#about .row {
+  display: flex;
+  justify-content: center;
+}
+
 #about .bio-left {
   height: auto;
   margin: 3% 5% 3% 10%;
@@ -34,13 +39,39 @@
 
   img {
     float: left;
-    height: 250px;
+    height: auto;
+    object-fit: cover;
     width: 40%;
   }
 
   p {
-    margin-left: 50px;
     float: left;
+    margin-left: 50px;
     width: 40%
   }
+}
+
+#about .bio-right {
+  height: auto;
+  margin: 3% 10% 3% 5%;
+  width: 40%;
+
+  img {
+    float: left;
+    height: auto;
+    object-fit: cover;
+    width: 40%;
+  }
+
+  p {
+    float: left;
+    margin-left: 50px;
+    width: 40%
+  }
+}
+
+#about .name {
+  color: $orange;
+  font-size: 1.25rem;
+  font-weight: 700;
 }
