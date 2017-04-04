@@ -325,3 +325,13 @@ var images4 = [
 
 var m = Math.floor(Math.random() * images4.length);
 $('.dogImage4').attr('src', images4[m]);
+
+
+// -------Matchmaker--------
+$(".matchmaker-button").click(function(){
+    $(".question-one").show();
+});
+
+$(".matchmaker-button").click(function(){
+    $(".matchmaker-small").hide();
+});

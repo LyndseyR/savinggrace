@@ -170,8 +170,8 @@ nav {
 }
 
 .matchmaker {
-  overflow:hidden;
   clear:both;
+  position:relative;
   h1 {
     text-align: center;
     line-height: 0;
@@ -181,11 +181,15 @@ nav {
     margin-right:22%;
   }
   .matchmaker-small {
-    width:800px;
+    width:60%;
+    position: relative;
     border:1px solid black;
     margin:0 auto;
     .matchmaker-image {
-      height:300px;
+      width:50%;
+      margin-left:25%;
+      margin-right:25%;
+      text-align:center;
     }
     p {
       text-align: center;
@@ -204,8 +208,11 @@ nav {
     }
   }
   .question-one{
-    // display:none;
-    width:800px;
+    display:none;
+    position:relative;
+    top:0;
+    left:0;
+    width:60%;
     margin:0 auto;
     text-align: center;
     color:white;
@@ -262,12 +269,6 @@ nav {
 
 }
 
-@media (max-width: 1200px){
-  .paw1, .paw2 {
-    display:none;
-  }
-}
-
 @media (max-width: 767px){
   .welcome-content {
     margin-left:10%;
@@ -282,6 +283,9 @@ nav {
   }
 }
 
+@media (max-width: 375px){
+
+}
 
 
 
