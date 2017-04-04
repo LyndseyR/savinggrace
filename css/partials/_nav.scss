@@ -21,16 +21,15 @@
   }
 
   .donate {
-    padding: 5px 40px;
+    padding: 5px 30px;
      background:#fff;
      border:none;
      border-radius: 8px;
      outline-color:#fff;
      width:40%;
-     margin: 0 15px;
+    //  margin: 0 15px;
 
      a{
-     font-size:1.25rem;
      color:$teal;
      text-decoration: none;
      font-weight:700;
@@ -69,6 +68,7 @@
     a:hover {
       background:#fff;
       color:$teal;
+      font-size: 700;
     }
   }
 }
@@ -109,7 +109,7 @@
           position: absolute;
           top: 28px;
           display: none;
-          z-index: 100;
+          // z-index: 100;
           a {
               display: block;
               width: 115px;
@@ -182,16 +182,14 @@ footer {
   background: $teal;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   align-items: center;
-  flex-flow: column;
-  padding: 0.25% 2%;
+  padding: 1% 5%;
 
-  .contact, .address {
+  .contact, .email, .address {
     color: white;
     font-weight: 300;
     font-size: .9rem;
-    margin: 0 5px;
-    text-align: center;
 
     a {
       letter-spacing: .01rem;
@@ -209,32 +207,21 @@ footer {
 //////////////////////////
 
 @media (max-width: 767px){
-  .main-header {
-    .logo {
-      height: 40px;
-    }
-    // .desktop-nav {
-    //   flex-wrap: wrap;
-    // }
-  }
-  footer {
-    padding: 0 2%;
-    font-size: .8rem;
-  }
-}
-
-@media (max-width: 600px){
     .desktop-nav {
+      display: none;
+    }
+    #donate-button {
       display: none;
     }
 
   .mobile-nav{
+    // padding: 0 2%;
     display: flex;
     justify-content: space-around;
     align-items: center;
     position: fixed;
     .logo {
-      height: 40px;
+      height: 50px;
     }
   }
 
@@ -249,6 +236,10 @@ footer {
   }
 
   footer {
+    padding: 0 2%;
+    font-size: .8rem;
+    flex-flow: column;
+
     .contact {
       display: inline-block;
       width:100%;

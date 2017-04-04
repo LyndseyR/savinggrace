@@ -42,15 +42,13 @@ h4 {
   .mobile-nav img {
     height: 50px; }
   .mobile-nav .donate {
-    padding: 5px 40px;
+    padding: 5px 30px;
     background: #fff;
     border: none;
     border-radius: 8px;
     outline-color: #fff;
-    width: 40%;
-    margin: 0 15px; }
+    width: 40%; }
     .mobile-nav .donate a {
-      font-size: 1.25rem;
       color: #28BE9B;
       text-decoration: none;
       font-weight: 700; }
@@ -83,7 +81,8 @@ h4 {
       margin-right: 0; }
     .hamburger-menu li a:hover {
       background: #fff;
-      color: #28BE9B; }
+      color: #28BE9B;
+      font-size: 700; }
 
 .main-header .desktop-nav {
   height: 75px;
@@ -110,8 +109,7 @@ h4 {
     .main-header .desktop-nav ul li ul {
       position: absolute;
       top: 28px;
-      display: none;
-      z-index: 100; }
+      display: none; }
       .main-header .desktop-nav ul li ul a {
         display: block;
         width: 115px;
@@ -160,31 +158,25 @@ footer {
   background: #28BE9B;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   align-items: center;
-  flex-flow: column;
-  padding: 0.25% 2%; }
-  footer .contact, footer .address {
+  padding: 1% 5%; }
+  footer .contact, footer .email, footer .address {
     color: white;
     font-weight: 300;
-    font-size: .9rem;
-    margin: 0 5px;
-    text-align: center; }
-    footer .contact a, footer .address a {
+    font-size: .9rem; }
+    footer .contact a, footer .email a, footer .address a {
       letter-spacing: .01rem;
       color: white;
       text-decoration: none; }
-    footer .contact a:hover, footer .address a:hover {
+    footer .contact a:hover, footer .email a:hover, footer .address a:hover {
       text-decoration: underline; }
 
 @media (max-width: 767px) {
-  .main-header .logo {
-    height: 40px; }
-
-  footer {
-    padding: 0 2%;
-    font-size: .8rem; } }
-@media (max-width: 600px) {
   .desktop-nav {
+    display: none; }
+
+  #donate-button {
     display: none; }
 
   .mobile-nav {
@@ -193,17 +185,21 @@ footer {
     align-items: center;
     position: fixed; }
     .mobile-nav .logo {
-      height: 40px; }
+      height: 50px; }
 
   .header-images img:nth-child(even) {
     display: none; }
   .header-images img:nth-child(odd) {
     width: 50%; }
 
-  footer .contact {
-    display: inline-block;
-    width: 100%;
-    text-align: center; } }
+  footer {
+    padding: 0 2%;
+    font-size: .8rem;
+    flex-flow: column; }
+    footer .contact {
+      display: inline-block;
+      width: 100%;
+      text-align: center; } }
 @font-face {
   font-family: GoodDog;
   src: url("../fonts/GOODDP__.TTF"); }
@@ -604,6 +600,11 @@ footer {
 .why-adopt h2, .faq h2, .volunteer h2, .foster h2 {
   text-align: left;
   padding-bottom: 2%; }
+.why-adopt a, .faq a, .volunteer a, .foster a {
+  color: #333;
+  text-decoration: none; }
+.why-adopt a:hover, .faq a:hover, .volunteer a:hover, .foster a:hover {
+  text-decoration: underline; }
 
 .list-header {
   margin-top: 20px;
@@ -630,11 +631,12 @@ footer {
 .faq .panel {
   margin-top: 5px;
   margin-bottom: 15px;
-  padding: 0 15px;
   text-align: left;
   display: none; }
+  .faq .panel p {
+    padding: 0 10px; }
   .faq .panel p:nth-child(n+2) {
-    padding: 10px 0; }
+    padding: 10px; }
   .faq .panel a {
     text-decoration: none;
     color: #333; }
@@ -651,13 +653,13 @@ footer {
       margin: 10px 0; }
 
   .why-adopt h2, .faq h2, .volunteer h2, .foster h2 {
-    text-align: center;
+    text-align: left;
     padding-bottom: 1%;
     font-size: 1.5rem; }
 
   .avoid-problems h2 {
     width: 100%;
-    text-align: center;
+    text-align: left;
     padding-bottom: 1%;
     font-size: 1.5rem; }
   .avoid-problems .box {

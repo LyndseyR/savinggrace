@@ -16,6 +16,13 @@
     text-align: left;
     padding-bottom: 2%;
   }
+  a {
+    color: #333;
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
 }
 
 .list-header {
@@ -52,12 +59,14 @@
   .panel {
     margin-top: 5px;
     margin-bottom: 15px;
-    padding: 0 15px;
     text-align: left;
     display: none;
+    p {
+      padding: 0 10px;
+    }
 
     p:nth-child(n+2){
-      padding: 10px 0;
+      padding: 10px;
     }
     a {
       text-decoration: none;
@@ -86,7 +95,7 @@
   }
   .why-adopt, .faq, .volunteer, .foster {
     h2 {
-      text-align: center;
+      text-align: left;
       padding-bottom: 1%;
       font-size:1.5rem;
     }
@@ -95,11 +104,11 @@
   .avoid-problems {
     h2 {
       width: 100%;
-      text-align: center;
+      text-align: left;
       padding-bottom: 1%;
       font-size:1.5rem;
     }
-    .box {
+    .box { //floats with list of bullets
       width: 100%;
       float: none;
     }
