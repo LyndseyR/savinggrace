@@ -75,3 +75,21 @@
   font-size: 1.25rem;
   font-weight: 700;
 }
+
+@media (max-width: 768px) {
+  #about .row {
+    flex-wrap: wrap;
+  }
+
+  #about .bio-left {
+    height: auto;
+    margin: 3% auto;
+    width: 80%;
+  }
+
+  #about .bio-right {
+    height: auto;
+    margin: 3% auto;
+    width: 80%;
+  }
+}
