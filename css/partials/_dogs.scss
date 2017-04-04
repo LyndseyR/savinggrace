@@ -146,3 +146,27 @@
 #dogs .remodal-orange {
   background-color: $orange-opacity;
 }
+
+@media (max-width: 768px) {
+  #dogs .remodal {
+    height: auto;
+    margin: auto;
+    width: 80%;
+
+    img {
+      float: none;
+      height: auto;
+      margin: auto;
+      transform: none;
+      width: 80%;
+    }
+
+    article {
+      float: none;
+      height: auto;
+      margin: auto;
+      transform: none;
+      width: 80%;
+    }
+  }
+}
