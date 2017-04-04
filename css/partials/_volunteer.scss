@@ -60,14 +60,23 @@
   box-sizing: border-box;
 }
 
+.foster {
+  a {
+    color: #333;
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+}
 .foster-content {
   margin-top: 15px;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  justify-content: space-between;
 
   .foster-agreement {
     height: 300px;
+    margin-left: 25px;
     .list-header{
       margin-top: 0px;
     }

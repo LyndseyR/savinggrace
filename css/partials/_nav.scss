@@ -128,8 +128,9 @@
   img {
     height: 255px;
     // width: 100%;
-    box-sizing: border-box;
+    // box-sizing: border-box;
     margin: 0;
+    display: none;
   }
   img:nth-child(odd) {
     width: 30%;
@@ -147,29 +148,26 @@
 
 footer {
   background: $teal;
-  height: 50px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 5%;
-  img {
-    height: 50px;
-  }
-  .contact {
-    width: 70%;
-    p {
+  flex-flow: column;
+  padding: 0.25% 2%;
+
+  .contact, .address {
+    color: white;
+    font-weight: 300;
+    font-size: .9rem;
+    margin: 0 5px;
+    text-align: center;
+
+    a {
+      letter-spacing: .01rem;
       color: white;
-      text-align: right;
-      font-weight: 300;
-      font-size: .9rem;
-      a {
-        letter-spacing: .01rem;
-        color: white;
-        text-decoration: none;
-      }
-      a:hover {
-        text-decoration: underline;
-      }
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
     }
   }
 }
@@ -214,17 +212,10 @@ footer {
   }
 
   footer {
-    img {
-      display: none;
-    }
     .contact {
       display: inline-block;
       width:100%;
-      border: 5px solid blue;
       text-align: center;
-      p {
-        text-align: center;
-      }
     }
   }
 }

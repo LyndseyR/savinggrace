@@ -1,5 +1,5 @@
 #adopt article, #volunteer article {
-  padding: 2% 10%;
+  padding: 2% 15%;
 }
 
 #adopt, #volunteer {
@@ -13,7 +13,7 @@
 
 .why-adopt, .faq, .volunteer, .foster {
   h2 {
-    text-align: center;
+    text-align: left;
     padding-bottom: 2%;
   }
 }
@@ -26,12 +26,6 @@
 
 .avoid-problems {
   background: $light-blue-opacity;
-  h2 {
-    width: 80%;
-    margin: 0 auto;
-    text-align: center;
-    padding-bottom: 2%;
-  }
   .box {
     width: 50%;
     float: left;
