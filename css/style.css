@@ -366,7 +366,8 @@ footer {
       font-size: 22px;
       border-radius: 8px;
       border: none;
-      margin-left: 30%; }
+      margin-left: 30%;
+      cursor: pointer; }
   #home .matchmaker .question-one {
     display: none;
     position: relative;
